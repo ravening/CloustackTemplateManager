@@ -72,7 +72,7 @@ public class Templates {
     private String packerVersion;
 
     @ApiModelProperty(notes = "File name of the template")
-    private String fielname;
+    private String filename;
 
     @ApiModelProperty(notes = "The url from where template can be downloaded")
     private String url;
