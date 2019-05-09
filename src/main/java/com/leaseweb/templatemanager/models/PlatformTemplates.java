@@ -42,7 +42,5 @@ public class PlatformTemplates {
 
     private String csCreated;
 
-    private String csUpdated;
-
     private String csRemoved;
 }

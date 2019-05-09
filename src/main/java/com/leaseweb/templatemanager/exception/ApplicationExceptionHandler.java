@@ -26,4 +26,22 @@ public class ApplicationExceptionHandler extends ResponseEntityExceptionHandler 
                 .body(exceptionResponse);
 
     }
+
+    public final ResponseEntity osidNotFoundException(final OsidNotFoundException e) {
+        ExceptionResponse exceptionResponse = ExceptionResponse
+                .of(e.getMessage(), HttpStatus.NOT_FOUND);
+
+        return ResponseEntity.status(exceptionResponse.getHttpStatus())
+                .body(exceptionResponse);
+
+    }
+
+    public final ResponseEntity templateViewNotFoundException(final TemplateViewNotFoundException e) {
+        ExceptionResponse exceptionResponse = ExceptionResponse
+                .of(e.getMessage(), HttpStatus.NOT_FOUND);
+
+        return ResponseEntity.status(exceptionResponse.getHttpStatus())
+                .body(exceptionResponse);
+
+    }
 }
