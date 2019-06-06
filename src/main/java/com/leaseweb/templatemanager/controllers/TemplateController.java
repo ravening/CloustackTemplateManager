@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/templates")
 @Api(value = "Templates controller", description = "API calls to get template details")
 @Slf4j
+
 public class TemplateController {
     @Autowired
     private TemplatesService templatesService;
@@ -46,7 +47,7 @@ public class TemplateController {
             @ApiResponse(code = 403, message = "Access is forbiddecd"),
             @ApiResponse(code = 404, message = "Unable to find the template")
     })
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public ResponseEntity<Templates> getTemplateById(@PathVariable("id") Long id) {
         log.info("Fetching the template with id {}", id);
         Optional<Templates> templates = templatesService.getTemplateById(id);

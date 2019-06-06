@@ -1,0 +1,33 @@
+export class TemplateView {
+  id: number;
+  name: string;
+  displaytext: string;
+  ostype: string;
+  tag: string;
+  osdistro: string;
+  osversion: string;
+  osidCas: string;
+  osidSap: string;
+  bit: string;
+  ospanel: string;
+  build: string;
+  size: string;
+  virtio: string;
+  app: string;
+  grow: number;
+  packerversion: string;
+  fileAvailable: number;
+  fileName: string;
+  fileUrl: string;
+  pop: string;
+  popName: string;
+  popDc: string;
+  popCountry: string;
+  platformId: number;
+  platformUuid: string;
+  platformState: string;
+  platformPublic: number;
+  platformFeatured: number;
+  platformCreated: string;
+  platformRemoved: string;
+}

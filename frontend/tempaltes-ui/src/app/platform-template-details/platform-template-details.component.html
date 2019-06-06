@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <mat-spinner class="example-loading-shade" *ngIf="isLoading"></mat-spinner>
+
+  <mat-card>
+    <mat-card-title>Platform Template details</mat-card-title>
+    <br>
+    <table class="table table-bordered table-hover">
+      <tbody>
+      <tr>
+        <th scope="row">Id</th>
+        <td>{{platformTemplate.id}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform Id</th>
+        <td>{{platformTemplate.platformId}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Template Id</th>
+        <td>{{platformTemplate.templateId}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Tempalte state</th>
+        <td>{{platformTemplate.csState}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Template Ready</th>
+        <td>{{platformTemplate.csReady}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Tempalte Uuid</th>
+        <td>{{platformTemplate.csUuid}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Public</th>
+        <td>{{platformTemplate.csPublic}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Featured</th>
+        <td>{{platformTemplate.csFeatured}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Extractable</th>
+        <td>{{platformTemplate.csExtractable}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Created</th>
+        <td>{{platformTemplate.csCreated}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Id</th>
+        <td>{{platformTemplate.csRemoved}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </mat-card>
+  <br>
+  <br>
+</div>
+

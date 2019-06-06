@@ -1,0 +1,136 @@
+<div class="container-fluid">
+  <mat-spinner class="example-loading-shade" *ngIf="isLoading"></mat-spinner>
+
+  <mat-card>
+    <mat-card-title>Template View details</mat-card-title>
+    <br>
+    <table class="table table-bordered table-hover">
+      <tbody>
+      <tr>
+        <th scope="row">Template name</th>
+        <td>{{template.name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Template display text</th>
+        <td>{{template.displaytext}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Os type</th>
+        <td>{{template.ostype}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Template tag</th>
+        <td>{{template.tag}}</td>
+      </tr>
+      <tr>
+        <th scope="row">OS distro</th>
+        <td>{{template.osdistro}}</td>
+      </tr>
+      <tr>
+        <th scope="row">OS version</th>
+        <td>{{template.osversion}}</td>
+      </tr>
+      <tr>
+        <th scope="row">CAS id</th>
+        <td>{{template.osidCas}}</td>
+      </tr>
+      <tr>
+        <th scope="row">SAP id</th>
+        <td>{{template.osidSap}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Bit</th>
+        <td>{{template.bit}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Control panel</th>
+        <td>{{template.panel}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Build</th>
+        <td>{{template.build}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>{{template.size}}</td>
+      </tr>
+      <tr>
+        <th scope="row">VirtIO type</th>
+        <td>{{template.virtio}}</td>
+      </tr>
+      <tr>
+        <th scope="row">App</th>
+        <td>{{template.app}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Auto Grow</th>
+        <td>{{template.grow}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Packer Version</th>
+        <td>{{template.packerVersion}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Template Avaialble</th>
+        <td>{{template.fileAvailable}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Filename</th>
+        <td>{{template.filename}}</td>
+      </tr>
+      <tr>
+        <th scope="row">URL</th>
+        <td>{{template.fileUrl}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Pop</th>
+        <td>{{template.pop}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Pop Name</th>
+        <td>{{template.popName}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Data Center</th>
+        <td>{{template.popDc}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Pop Country</th>
+        <td>{{template.popCountry}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform Id</th>
+        <td>{{template.platformId}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform Uuid</th>
+        <td>{{template.platformUuid}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform State</th>
+        <td>{{template.platformState}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform Type(Public or Private)</th>
+        <td>{{template.platformPublic}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform Featured</th>
+        <td>{{template.platformFeatured}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform Created</th>
+        <td>{{template.platformCreated}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Platform Removed</th>
+        <td>{{template.platformRemoved}}</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </mat-card>
+  <br>
+  <br>
+</div>
+

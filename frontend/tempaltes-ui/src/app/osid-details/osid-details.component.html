@@ -1,0 +1,71 @@
+<div class="container-fluid">
+  <mat-spinner class="example-loading-shade" *ngIf="isLoading"></mat-spinner>
+
+  <mat-card>
+    <mat-card-title>Osid details</mat-card-title>
+    <br>
+    <table class="table table-bordered table-hover">
+      <tbody>
+      <tr>
+        <th scope="row">Id</th>
+        <td>{{osid.id}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Name</th>
+        <td>{{osid.name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Display Text</th>
+        <td>{{osid.displaytext}}</td>
+      </tr>
+      <tr>
+        <th scope="row">OS Type</th>
+        <td>{{osid.ostype}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Tag</th>
+        <td>{{osid.tag}}</td>
+      </tr>
+      <tr>
+        <th scope="row">OS Distro</th>
+        <td>{{osid.osdistro}}</td>
+      </tr>
+      <tr>
+        <th scope="row">OS version</th>
+        <td>{{osid.osversion}}</td>
+      </tr>
+      <tr>
+        <th scope="row">CAS Id</th>
+        <td>{{osid.osidCas}}</td>
+      </tr>
+      <tr>
+        <th scope="row">SAP id</th>
+        <td>{{osid.osidSap}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Bit</th>
+        <td>{{osid.bit}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Arch</th>
+        <td>{{osid.arch}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Panel</th>
+        <td>{{osid.panel}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Active</th>
+        <td>{{osid.active}}</td>
+      </tr>
+      <tr>
+        <th scope="row">EOL</th>
+        <td>{{osid.eol}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </mat-card>
+  <br>
+  <br>
+</div>
+

@@ -1,0 +1,54 @@
+<div class="example-loading-shade" *ngIf="isLoading">
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+</div>
+<mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header><h6> Id</h6> </th>
+      <td mat-cell *matCellDef="let row">
+        <nav>
+          <a routerLink="platformtemplate-details/{{row.id}}">
+            <p>{{row.id}} </p>
+          </a>
+
+        </nav>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="platformid">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header><h6>Platform Id</h6> </th>
+      <td mat-cell *matCellDef="let row">
+        <nav>
+          <a routerLink="platforms/platform-details/{{row.platformId}}">
+            <p>{{row.platformId}} </p>
+          </a>
+
+        </nav>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="templateid">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header><h6>Template Id </h6></th>
+      <td mat-cell *matCellDef="let row">
+        <nav>
+          <a routerLink="templates/template-details/{{row.templateId}}">
+            <p>{{row.templateId}} </p>
+          </a>
+
+        </nav>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+    </tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[10, 25, 100]"></mat-paginator>
+</div>

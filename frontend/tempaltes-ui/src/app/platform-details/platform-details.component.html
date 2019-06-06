@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <mat-spinner class="example-loading-shade" *ngIf="isLoading"></mat-spinner>
+
+  <mat-card>
+    <mat-card-title>Platform details</mat-card-title>
+    <br>
+    <table class="table table-bordered table-hover">
+      <tbody>
+      <tr>
+        <th scope="row">Platform name</th>
+        <td>{{platform.name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Pop name</th>
+        <td>{{platform.pop}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Data center</th>
+        <td>{{platform.dc}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Country code</th>
+        <td>{{platform.cc}}</td>
+      </tr>
+      <tr>
+        <th scope="row">SAP enabled</th>
+        <td>{{platform.sap}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Private Cloud Platform</th>
+        <td>{{platform.isPrivate}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Active</th>
+        <td>{{platform.active}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </mat-card>
+  <br>
+  <br>
+</div>
+

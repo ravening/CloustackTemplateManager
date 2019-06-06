@@ -43,7 +43,7 @@ public class PlatformsController {
             @ApiResponse(code = 403, message = "Access is forbiddecd"),
             @ApiResponse(code = 404, message = "Unable to find the platform")
     })
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public ResponseEntity<Platforms> getPlatformById(@PathVariable("id") Long id) {
         log.info("Fetching the platform with id {}", id);
         Optional<Platforms> platforms = platformService.getPlatformById(id);

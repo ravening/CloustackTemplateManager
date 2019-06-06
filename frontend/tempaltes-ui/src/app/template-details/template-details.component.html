@@ -1,0 +1,95 @@
+<div class="container-fluid">
+<mat-spinner class="example-loading-shade" *ngIf="isLoading"></mat-spinner>
+
+<mat-card>
+  <mat-card-title>Template details</mat-card-title>
+  <br>
+  <table class="table table-bordered table-hover">
+    <tbody>
+    <tr>
+      <th scope="row">Template name</th>
+      <td>{{template.name}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Template display text</th>
+      <td>{{template.displaytext}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Os type</th>
+      <td>{{template.ostype}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Template tag</th>
+      <td>{{template.tag}}</td>
+    </tr>
+    <tr>
+      <th scope="row">OS distro</th>
+      <td>{{template.osdistro}}</td>
+    </tr>
+    <tr>
+      <th scope="row">OS version</th>
+      <td>{{template.osversion}}</td>
+    </tr>
+    <tr>
+      <th scope="row">CAS id</th>
+      <td>{{template.osidCas}}</td>
+    </tr>
+    <tr>
+      <th scope="row">SAP id</th>
+      <td>{{template.osidSap}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Bit</th>
+      <td>{{template.bit}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Architecture type</th>
+      <td>{{template.arch}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Control panel</th>
+      <td>{{template.panel}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Build</th>
+      <td>{{template.build}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Size</th>
+      <td>{{template.size}}</td>
+    </tr>
+    <tr>
+      <th scope="row">VirtIO type</th>
+      <td>{{template.virtio}}</td>
+    </tr>
+    <tr>
+      <th scope="row">App</th>
+      <td>{{template.app}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Auto Grow</th>
+      <td>{{template.grow}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Packer Version</th>
+      <td>{{template.packerVersion}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Filename</th>
+      <td>{{template.filename}}</td>
+    </tr>
+    <tr>
+      <th scope="row">URL</th>
+      <td>{{template.url}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Available</th>
+      <td>{{template.available}}</td>
+    </tr>
+    </tbody>
+  </table>
+</mat-card>
+<br>
+<br>
+</div>
+
