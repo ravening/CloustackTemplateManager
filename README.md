@@ -30,4 +30,12 @@ Steps to run the project
 
         http://localhost:8080/api/v1/platforms
 
+    8. To start the frontend project navigate to frontend/templates-ui and run the below command
+
+        ng serve
+
+    9. Now navigate to the following link in your browser
+
+        http://localhost:4200
+
 Contact CloudStack team if you need more information on this application
