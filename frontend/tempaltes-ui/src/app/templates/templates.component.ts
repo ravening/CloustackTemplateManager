@@ -17,8 +17,8 @@ export class TemplatesComponent implements OnInit {
   displayedColumns: string[] = ['name', 'displaytext', 'build', 'size'];
   dataSource: MatTableDataSource<Templates>;
 
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   constructor(private templateService: TemplateService) { }
 

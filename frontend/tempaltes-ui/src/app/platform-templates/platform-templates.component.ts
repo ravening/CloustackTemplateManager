@@ -16,8 +16,8 @@ export class PlatformTemplatesComponent implements OnInit {
 
   isLoading = true;
   displayedColumns: string[] = ['id', 'platformid', 'templateid'];
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   constructor(private platformtemplateService: PlatformTemplateService) { }
 

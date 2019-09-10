@@ -16,8 +16,8 @@ export class OsidComponent implements OnInit {
   dataSource: MatTableDataSource<Osid>;
   isLoading = true;
   displayedColumns: string[] = ['name', 'displaytext'];
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   constructor(private osidService: OsidService) { }
 

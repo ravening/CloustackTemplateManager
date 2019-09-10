@@ -17,8 +17,8 @@ export class PlatformsComponent implements OnInit {
   displayedColumns: string[] = ['name', 'dc'];
   dataSource: MatTableDataSource<Platforms>;
 
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   constructor(private platformService: PlatformService) { }
 
