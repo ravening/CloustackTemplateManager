@@ -30,12 +30,10 @@ Steps to run the project
 
         http://localhost:8080/api/v1/platforms
 
-    8. To start the frontend project navigate to ```frontend/templates-ui`` and run the below command
+    8. To start the frontend project navigate to frontend/templates-ui and run the below command
 
-	```
         npm install --save-dev @angular-devkit/build-angular
         ng serve --host 0.0.0.0
-        ```
 
     9. Now navigate to the following link in your browser
 
